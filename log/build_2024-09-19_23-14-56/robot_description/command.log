@@ -1,4 +1,0 @@
-Invoking command in '/home/cyber/Desktop/HomeBot-ROS2-Navigation-main/build/robot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/build/robot_description -- -j4 -l4
-Invoked command in '/home/cyber/Desktop/HomeBot-ROS2-Navigation-main/build/robot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/build/robot_description -- -j4 -l4
-Invoking command in '/home/cyber/Desktop/HomeBot-ROS2-Navigation-main/build/robot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/build/robot_description
-Invoked command in '/home/cyber/Desktop/HomeBot-ROS2-Navigation-main/build/robot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/build/robot_description
