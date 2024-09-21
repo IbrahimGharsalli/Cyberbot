@@ -1,0 +1,2 @@
+[console_scripts]
+robot_patrol = robot_patrol.house_patrol:main

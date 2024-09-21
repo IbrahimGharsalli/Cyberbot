@@ -1,0 +1,22 @@
+[6.194s] Invoking command in '/home/cyber/Desktop/HomeBot-ROS2-Navigation-main/src/robot_patrol': PYTHONPATH=/home/cyber/Desktop/HomeBot-ROS2-Navigation-main/build/robot_patrol/prefix_override:/home/cyber/Desktop/HomeBot-ROS2-Navigation-main/install/robot_patrol/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_patrol build --build-base /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/build/robot_patrol/build install --record /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/build/robot_patrol/install.log --single-version-externally-managed install_data
+[6.390s] running egg_info
+[6.402s] writing ../../build/robot_patrol/robot_patrol.egg-info/PKG-INFO
+[6.403s] writing dependency_links to ../../build/robot_patrol/robot_patrol.egg-info/dependency_links.txt
+[6.403s] writing entry points to ../../build/robot_patrol/robot_patrol.egg-info/entry_points.txt
+[6.403s] writing requirements to ../../build/robot_patrol/robot_patrol.egg-info/requires.txt
+[6.403s] writing top-level names to ../../build/robot_patrol/robot_patrol.egg-info/top_level.txt
+[6.547s] reading manifest file '../../build/robot_patrol/robot_patrol.egg-info/SOURCES.txt'
+[6.556s] adding license file 'LICENSE'
+[6.557s] writing manifest file '../../build/robot_patrol/robot_patrol.egg-info/SOURCES.txt'
+[6.557s] running build
+[6.557s] running build_py
+[6.557s] running install
+[6.562s] running install_lib
+[6.576s] running install_data
+[6.576s] running install_egg_info
+[6.591s] removing '/home/cyber/Desktop/HomeBot-ROS2-Navigation-main/install/robot_patrol/lib/python3.10/site-packages/robot_patrol-0.0.0-py3.10.egg-info' (and everything under it)
+[6.591s] Copying ../../build/robot_patrol/robot_patrol.egg-info to /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/install/robot_patrol/lib/python3.10/site-packages/robot_patrol-0.0.0-py3.10.egg-info
+[6.592s] running install_scripts
+[6.630s] Installing robot_patrol script to /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/install/robot_patrol/lib/robot_patrol
+[6.630s] writing list of installed files to '/home/cyber/Desktop/HomeBot-ROS2-Navigation-main/build/robot_patrol/install.log'
+[6.655s] Invoked command in '/home/cyber/Desktop/HomeBot-ROS2-Navigation-main/src/robot_patrol' returned '0': PYTHONPATH=/home/cyber/Desktop/HomeBot-ROS2-Navigation-main/build/robot_patrol/prefix_override:/home/cyber/Desktop/HomeBot-ROS2-Navigation-main/install/robot_patrol/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_patrol build --build-base /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/build/robot_patrol/build install --record /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/build/robot_patrol/install.log --single-version-externally-managed install_data

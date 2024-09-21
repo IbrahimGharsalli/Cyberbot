@@ -1,0 +1,40 @@
+[0.102s] Invoking command in '/home/cyber/Desktop/HomeBot-ROS2-Navigation-main/build/robot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/build/robot_description -- -j4 -l4
+[1.446s] Invoked command in '/home/cyber/Desktop/HomeBot-ROS2-Navigation-main/build/robot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/build/robot_description -- -j4 -l4
+[1.468s] Invoking command in '/home/cyber/Desktop/HomeBot-ROS2-Navigation-main/build/robot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/build/robot_description
+[1.473s] -- Install configuration: ""
+[1.473s] -- Up-to-date: /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/install/robot_description/share/robot_description/launch
+[1.473s] -- Up-to-date: /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/install/robot_description/share/robot_description/launch/gazebo.launch.xml
+[1.473s] -- Up-to-date: /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/install/robot_description/share/robot_description/launch/display.launch.xml
+[1.474s] -- Up-to-date: /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/install/robot_description/share/robot_description/urdf
+[1.474s] -- Up-to-date: /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/install/robot_description/share/robot_description/urdf/lidar.xacro
+[1.474s] -- Up-to-date: /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/install/robot_description/share/robot_description/urdf/common_properties.xacro
+[1.474s] -- Up-to-date: /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/install/robot_description/share/robot_description/urdf/mobile_robot_base.xacro
+[1.474s] -- Up-to-date: /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/install/robot_description/share/robot_description/urdf/camera.xacro
+[1.474s] -- Up-to-date: /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/install/robot_description/share/robot_description/urdf/mobile_robot.urdf.xacro
+[1.474s] -- Up-to-date: /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/install/robot_description/share/robot_description/urdf/mobile_robot_gazebo.xacro
+[1.474s] -- Up-to-date: /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/install/robot_description/share/robot_description/meshes
+[1.474s] -- Up-to-date: /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/install/robot_description/share/robot_description/meshes/wheel.dae
+[1.474s] -- Up-to-date: /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/install/robot_description/share/robot_description/meshes/motor.dae
+[1.474s] -- Up-to-date: /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/install/robot_description/share/robot_description/meshes/rplidar.dae
+[1.474s] -- Up-to-date: /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/install/robot_description/share/robot_description/meshes/camera.dae
+[1.475s] -- Up-to-date: /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/install/robot_description/share/robot_description/meshes/ubase_link.dae
+[1.475s] -- Up-to-date: /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/install/robot_description/share/robot_description/meshes/base_link.dae
+[1.475s] -- Up-to-date: /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/install/robot_description/share/robot_description/rviz
+[1.475s] -- Up-to-date: /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/install/robot_description/share/robot_description/rviz/urdf_config.rviz
+[1.475s] -- Up-to-date: /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/install/robot_description/share/robot_description/rviz/gazebo_config.rviz
+[1.475s] -- Up-to-date: /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/install/robot_description/share/ament_index/resource_index/package_run_dependencies/robot_description
+[1.475s] -- Up-to-date: /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/install/robot_description/share/ament_index/resource_index/parent_prefix_path/robot_description
+[1.475s] -- Up-to-date: /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/install/robot_description/share/robot_description/environment/ament_prefix_path.sh
+[1.475s] -- Up-to-date: /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/install/robot_description/share/robot_description/environment/ament_prefix_path.dsv
+[1.475s] -- Up-to-date: /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/install/robot_description/share/robot_description/environment/path.sh
+[1.475s] -- Up-to-date: /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/install/robot_description/share/robot_description/environment/path.dsv
+[1.475s] -- Up-to-date: /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/install/robot_description/share/robot_description/local_setup.bash
+[1.475s] -- Up-to-date: /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/install/robot_description/share/robot_description/local_setup.sh
+[1.475s] -- Up-to-date: /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/install/robot_description/share/robot_description/local_setup.zsh
+[1.475s] -- Up-to-date: /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/install/robot_description/share/robot_description/local_setup.dsv
+[1.475s] -- Installing: /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/install/robot_description/share/robot_description/package.dsv
+[1.475s] -- Up-to-date: /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/install/robot_description/share/ament_index/resource_index/packages/robot_description
+[1.475s] -- Up-to-date: /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/install/robot_description/share/robot_description/cmake/robot_descriptionConfig.cmake
+[1.475s] -- Up-to-date: /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/install/robot_description/share/robot_description/cmake/robot_descriptionConfig-version.cmake
+[1.475s] -- Up-to-date: /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/install/robot_description/share/robot_description/package.xml
+[1.476s] Invoked command in '/home/cyber/Desktop/HomeBot-ROS2-Navigation-main/build/robot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/cyber/Desktop/HomeBot-ROS2-Navigation-main/build/robot_description
