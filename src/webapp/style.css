@@ -1,8 +1,19 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.header {
+  font-family: "Bebas Neue", sans-serif !important;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+}
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  color: #fff;
 }
 
 .hero{
@@ -127,4 +138,41 @@ footer a{
   width: 100%;
   display: inline-block;
   padding-bottom: 10px;
+}
+
+html{
+  background-color: #051D40;
+}
+.intro p{
+  font-size: 1.2em;
+}
+.article-text h4{
+  font-size: 1.4em;
+  padding-bottom: 3px;
+  text-align: center;
+  border-bottom: #ccc solid 2px;
+}
+
+.article-text{
+  padding: 20px 25px;
+  width: 100%;
+}
+
+.article-text p{
+  text-align: center;
+}
+
+.article-texts{
+  width: 100%;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.photo{
+  margin-top: 15px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
