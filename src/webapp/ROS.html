@@ -14,30 +14,57 @@
   <main>
     <div class="simulations">
       <div class="rviz">
-        <img src="https://placehold.co/600x400" alt="">
+        <button id="startBtn">Start rviz </button>
+        <video id="screenVideo" autoplay playsinline></video>
       </div>
-      <div class="gazebo"><img src="https://placehold.co/600x400" alt=""></div>
-    </div>
 
-    <div class="cmd">
-      <div class="text">
-        <h3>tuto</h3>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, itaque, esse nesciunt natus deleniti praesentium
-        dolores sequi dignissimos temporibus numquam labore sunt, reprehenderit magni possimus quia sed error blanditiis
-        ut?:width:w
+
+      <div id="gazebo">
+
+        <!-- Stream the main camera feed -->
+        <img src="http://localhost:8080/stream?topic=/camera_sensor/image_raw" width="640" height="480"
+          alt="Camera Stream" />
+
       </div>
-      <div class="cotrollerSpace">
-        <div class="controller">
-          <button class="hidden"></button>
-          <button>Forward</button>
-          <button class="hidden"></button>
-          <button>Left</button>
-          <button>Bottom</button>
-          <button>Right</button>
+
+      <div class="cmd">
+        <div class="text">
+          <h3>intro</h3>
+          I've created a website that demonstrates how ROS (Robot Operating System) works through a cool robot
+          simulation. The robot can find the best path to any location you set, using AI and smart algorithms to plan
+          the route. To make it more fun, I’ve also added a controller so you can manually move the robot around and get
+          a feel for how it navigates in real time
+        </div>
+        <div class="controllerSpace">
+          <div class="controller">
+            <button class="hidden"></button>
+            <button onclick="sendCommand('i')">Forward</button>
+            <button class="hidden"></button>
+            <button onclick="sendCommand('j')">Left</button>
+            <button onclick="sendCommand('l')">Bottom</button>
+            <button onclick="sendCommand('m')">Right</button>
+          </div>
         </div>
       </div>
-    </div>
   </main>
+
+  <script>
+    function sendCommand(command) {
+      $.ajax({
+        url: '/move',
+        type: 'POST',
+        contentType: 'application/json',
+        data: JSON.stringify({command: command}),
+        success: function (response) {
+          console.log('Command sent: ' + command);
+        },
+        error: function (error) {
+          console.error('Error sending command:', error);
+        }
+      });
+    }
+  </script>
+  <script src="screen-share.js"></script>
 </body>
 
 </html>

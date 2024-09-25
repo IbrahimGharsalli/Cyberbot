@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robot Video Stream</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+    h1, h2 {
+      color: #444;
+    }
+    img {
+      border: 2px solid #ccc;
+      margin: 20px;
+    }
+    #stream-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Robot Live Stream</h1>
+  <div id="stream-container">
+    <!-- Stream the main camera feed -->
+    <h2>Camera Stream</h2>
+    <img src="http://localhost:8080/stream?topic=/camera_sensor/image_raw" width="640" height="480" alt="Camera Stream" />
+    
+  </div>
+
+  <footer>
+    <p>Robot Streaming Powered by ROS2 & Web Video Server</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot Control</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .button {
+            background-color: green;
+            color: white;
+            padding: 15px;
+            margin: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        .stop {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Control the Robot</h1>
+    <div style="text-align:center;">
+        <button class="button" onclick="sendCommand('i')">Forward</button><br>
+        <button class="button" onclick="sendCommand('j')">Left</button>
+        <button class="button stop" onclick="sendCommand('k')">Stop</button>
+        <button class="button" onclick="sendCommand('l')">Right</button><br>
+        <button class="button" onclick="sendCommand('m')">Backward</button>
+    </div>
+
+    <script>
+        function sendCommand(command) {
+            $.ajax({
+                url: '/move',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify({ command: command }),
+                success: function(response) {
+                    console.log('Command sent: ' + command);
+                },
+                error: function(error) {
+                    console.error('Error sending command:', error);
+                }
+            });
+        }
+    </script>
+</body>
+</html>

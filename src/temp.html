@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROS2D Occupancy Grid Visualization</title>
+  
+  <!-- Include necessary libraries from RobotWebTools -->
+  <script src="http://static.robotwebtools.org/EventEmitter2/current/eventemitter2.min.js"></script>
+  <script src="http://static.robotwebtools.org/roslibjs/current/roslib.min.js"></script>
+  <script src="http://static.robotwebtools.org/ros2djs/current/ros2d.min.js"></script>
+  
+  <!-- Style the visualization container -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f7f7f7;
+    }
+    #visualization {
+      border: 1px solid #ccc;
+      width: 800px;
+      height: 600px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Visualization container -->
+  <div id="visualization"></div>
+
+  <script type="text/javascript">
+    // Connect to rosbridge server via WebSocket
+    var ros = new ROSLIB.Ros({
+      url : 'ws://localhost:9090'  // Update to point to your ROS bridge server if needed
+    });
+
+    // Create the main viewer
+    var viewer = new ROS2D.Viewer({
+      divID : 'visualization',   // The div ID where the visualization will be displayed
+      width : 800,
+      height : 600
+    });
+
+    // Create grid client to listen to occupancy grid updates and visualize them
+    var gridClient = new ROS2D.OccupancyGridClient({
+      ros : ros,
+      rootObject : viewer.scene,   // Add to the viewer's scene
+      continuous : true            // Continuously update the grid map
+    });
+
+    // Adjust the viewer scale to match the map size after the first map is received
+    gridClient.on('change', function() {
+      viewer.scaleToDimensions(gridClient.currentGrid.width, gridClient.currentGrid.height);
+      viewer.shift(gridClient.currentGrid.pose.position.x, gridClient.currentGrid.pose.position.y);
+    });
+  </script>
+
+</body>
+</html>
