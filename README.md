@@ -1,16 +1,16 @@
 # Cyberbot-ROS2-Navigation
-HomeBot-ROS2-Navigation: A ROS2-powered robotic platform for autonomous indoor navigation and mapping.
+CyberBot: A ROS2-powered robotic platform for autonomous indoor navigation and mapping.
 
-![HomeBot Image](mobile_robot_gazebo.gif) 
+![CyberBot Image](mobile_robot_gazebo.gif) 
 
 ## Project Overview
-This repository contains a suite of ROS2 packages for the HomeBot, an autonomous robot designed for indoor navigation and mapping. The provided image showcases the HomeBot's physical design, which the following packages bring to life:
+This repository contains a suite of ROS2 packages for the CyberBot, an autonomous robot designed for indoor navigation and mapping. The provided image showcases the CyberBot's physical design, which the following packages bring to life:
 
 - `robot_description`: Defines the robot's physical parameters, including its URDF files, visual meshes, and essential configurations for simulation purposes.
-- `robot_simulation`: Contains the necessary configurations and launch files for simulating the HomeBot in a household environment, using tools like Gazebo and RViz for SLAM and navigation testing.
+- `robot_simulation`: Contains the necessary configurations and launch files for simulating the CyberBot in a household environment, using tools like Gazebo and RViz for SLAM and navigation testing.
 - `robot_patrol`: Implements a patrolling behavior, directing the robot to navigate autonomously through a series of predefined waypoints based on the generated map data.
 
-These packages represent the core components of the HomeBot's functionality, demonstrating practical applications of ROS2 in robotic indoor navigation.
+These packages represent the core components of the CyberBot's functionality, demonstrating practical applications of ROS2 in robotic indoor navigation.
 
 ## Getting Started
 ### Prerequisites
@@ -33,7 +33,7 @@ These packages represent the core components of the HomeBot's functionality, dem
 2. **Clone this repository into your workspace:**
    
    ```sh
-   git clone https://github.com/aimechengineer/HomeBot-ROS2-Navigation.git src
+   git clone https://github.com/aimechengineer/CyberBot-ROS2-Navigation.git src
 
 3. **Build the workspace:**
    ```sh
@@ -66,11 +66,11 @@ Replace **path_to_robot_description_package** with the actual path to your **rob
 
 ## Usage
 ### robot_description
-**Display HomeBot in RViz:**
+**Display CyberBot in RViz:**
 
     ros2 launch robot_description display.launch.xml
 
-**Display HomeBot in Gazebo and Rviz:**
+**Display CyberBot in Gazebo and Rviz:**
 
     ros2 launch robot_description gazebo.launch.xml
 
@@ -83,12 +83,12 @@ Perform SLAM and generate a map of the environment:
 
        ros2 launch robot_simulation house_slam.launch.py
        
-3. **Control HomeBot:**
-   Use teleop to manually control HomeBot during SLAM:
+3. **Control CyberBot:**
+   Use teleop to manually control CyberBot during SLAM:
    
        ros2 run teleop_twist_keyboard teleop_twist_keyboard
    
-![HomeBot Image](slam.gif)  
+![CyberBot Image](slam.gif)  
 
 #### Autonomous Navigation
 Navigate autonomously in the environment post-SLAM:
@@ -102,13 +102,10 @@ Navigate autonomously in the environment post-SLAM:
 
        ros2 launch robot_simulation autonomous_navigation.launch.py
 
-   Once the 2D Pose Estimate is set in RViz, HomeBot can autonomously navigate the environment. Alternatively, you can start the patrol mode:
+   Once the 2D Pose Estimate is set in RViz, CyberBot can autonomously navigate the environment. Alternatively, you can start the patrol mode:
 
        ros2 run robot_patrol robot_patrol 
-   In patrol mode, HomeBot will navigate to predefined locations autonomously.
+   In patrol mode, CyberBot will navigate to predefined locations autonomously.
 
-![HomeBot Image](navigation.gif) 
+![CyberBot Image](navigation.gif) 
 
-## License
-
-This project is licensed under the MIT License - see the ![LICENSE](LICENSE)  file for details.
